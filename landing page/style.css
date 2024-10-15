@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-links a {
-    color: rgb(0, 0, 0);
+    color: #000;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
@@ -60,12 +60,12 @@ nav {
 
 .cta-btn {
     background:transparent;
-    color: #321df1;
+    color:#000;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
-    border: 2px solid #000;
-    transition: background-color 0.3s ease;
+    border: 2px solid #ec8610;
+    transition: background-color 0.5s ease;
 }
 
 .cta-btn:hover {
@@ -75,9 +75,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url(images/bg.jpg) no-repeat center center/cover;
     height: 100vh;
-    color: white;
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +90,7 @@ nav {
 }
 
 .hero-content h1 span {
-    color: #f1c40f;
+    color: #ec8610;
 }
 
 .hero-content p {
@@ -101,7 +100,7 @@ nav {
 
 /* Services Section */
 .services {
-    background-color: #fff;
+    background-color: #ec9f10e1;
     padding: 80px 0;
     text-align: center;
 }
@@ -119,7 +118,7 @@ nav {
 }
 
 .service {
-    background-color: #f9f9f9;
+    background-color: #fdfdfc75;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -145,7 +144,7 @@ nav {
 /* Solutions Section */
 .solutions {
     padding: 80px 0;
-    background-color: #fef3e5;
+    background-color: #e7880c7c;
     text-align: center;
 }
 
@@ -170,6 +169,21 @@ nav {
     padding: 80px 0;
     text-align: center;
     background-color: #fff;
+}
+.cta-a-btn {
+    background:transparent;
+    color:#000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #ec8610;
+    transition: background-color 0.5s ease;
+    margin-top: 1rem;
+}
+
+.cta-a-btn:hover {
+    background-color: #ec8610;
+    color: #fff;
 }
 
 /* Testimonials Section */
