@@ -17,6 +17,8 @@ body {
     max-width: 1200px;
 }
 
+
+
 /* Header */
 header {
     padding: 20px 0;
@@ -25,12 +27,16 @@ header {
     z-index: 1000;
     backdrop-filter: blur(5px);
 }
+.toggle-btn{
+    display: none;
+}
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
     color: #ec8610;
 }
+
 
 nav {
     display: flex;
@@ -47,30 +53,38 @@ nav {
     margin-left: 30px;
 }
 
+
 .nav-links a {
-    color: #000;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover{
-    color: #ec8610;
+.nav-links a:hover {
+    color: #f1c40f;
 }
 
 .cta-btn {
-    background:transparent;
-    color:#000;
+    background-color: #fff;
+    color: #ff6f3c;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
-    border: 2px solid #ec8610;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #ec8610;
+    background-color: #ff6f3c;
     color: #fff;
+}
+
+/* Toggle button for mobile view */
+.toggle-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
 }
 
 /* Hero Section */
@@ -96,6 +110,67 @@ nav {
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
+}
+
+/* Responsive Navigation - Mobile View */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        display: none; /* Hidden by default */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ec8610;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .nav-links li{
+        margin-top: 2rem;
+    }
+
+    /* Show the toggle button in mobile view */
+    .toggle-btn {
+        display: block;
+        color: #333;
+    }
+
+    .cta-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show navigation when toggled */
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+
+    .nav-links.show {
+        display: flex;
+        margin-top: 3rem;
+        width: 70%;
+        height: 20rem;
+    }
+
+    
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem;
+    }
+
+
 }
 
 /* Services Section */
@@ -213,7 +288,7 @@ nav {
     box-shadow: 0 2px 20px 5px #ec8610;
 }
 .name{
-    color:#ec8610 ;
+    color: #ec8610;
 }
 
 /* Footer */
@@ -243,41 +318,5 @@ footer {
     .service {
         width: 80%;
         margin: 10px auto;
-    }
-}
-
-/* Mobile Phones */
-@media (max-width: 600px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        display: none;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .service {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .cta-btn {
-        padding: 8px 15px;
-        font-size: 0.9rem;
     }
 }

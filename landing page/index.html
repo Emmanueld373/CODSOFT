@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Header Section -->
-   <header>
-    <div class="container">
-        <h1 class="logo">DEFCOM CONSULT</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <button class="cta-btn">Sign Up</button>
-        </nav>
-    </div>
+
+<header>
+    <div class="logo">DEFCOM CONSULT</div>
+    <!-- Toggle Button for Mobile View -->
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button  class="cta-a-btn">Sign Up</button>
+    </nav>
 </header>
 
 <!-- Hero Section -->
@@ -29,7 +28,7 @@
     <div class="container hero-content">
         <h1>We create <span>solutions</span> for your business</h1>
         <p>Our team keeps a keen eye on emerging trends and technologies to ensure the effectiveness, interactive and beauty of your website.</p>
-        <button class="cta-btn">Read More</button>
+        <button class="cta-a-btn">Read More</button>
     </div>
 </section>
 
@@ -100,5 +99,7 @@
         <p>&copy; 2024 DEFCOM CONSULT. All Rights Reserved.</p>
     </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
